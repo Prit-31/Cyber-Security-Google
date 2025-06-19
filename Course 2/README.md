@@ -1,13 +1,28 @@
-# Google Cybersecurity Learning Journey
+# Security Risk Management Basics
 
-This repository documents my learning from the Google Cybersecurity Professional Certificate and beyond.
+This project contains basic examples and documentation related to security risk management. It is based on the concepts learned in the **"Play It Safe: Manage Security Risks"** module of the Google Cybersecurity Certificate.
 
-## 📚 Key Areas Covered:
-- Risk Management and Frameworks (CISSP, RMF, CSF)
-- SIEM Tools and Hands-on Practice
-- Security policies, vulnerabilities, and risk mitigation
+##  Contents
 
-## 🚧 In Progress:
-- Setting up Wazuh for log analysis
-- Building a sample SOC alert workflow
-- 
+- Risk Register Example
+- Sample Security Policies
+- NIST Cybersecurity Framework Overview
+- Risk Management Process Diagram
+
+##  Topics Covered
+
+- Threats, Vulnerabilities, Risks
+- Risk Assessment Process
+- Mitigation Strategies
+- Security Policies and Frameworks (NIST, ISO 27001)
+
+##  Learned Concepts
+
+- Identify and prioritize security risks
+- Create a risk register
+- Apply control frameworks
+- Design basic security policies
+
+---
+
+ Built for learning and showcasing cybersecurity fundamentals.
