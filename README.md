@@ -46,4 +46,20 @@
 - Wireless security protocols: WPA2/WPA3
 - Tools introduced: Wireshark, nmap
 
-✅ *Status:* Module 1 & 2 completed 
+### 📘 Module 3: Network Security Controls
+- Network segmentation and subnetting
+- Demilitarized Zones (DMZs)
+- Access Control Lists (ACLs)
+- Zero Trust architecture
+- Firewalls: Proxy, Next-Gen (NGFW), and Circuit-Level
+- Security hardening strategies
+- Physical vs logical security controls
+
+### 📘 Module 4: Monitoring and Logging
+- Importance of network monitoring
+- Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)
+- Log sources: routers, firewalls, servers
+- Packet capture tools (Wireshark/tcpdump)
+- SIEM basics: log correlation and alerting
+- Indicators of Compromise (IOCs)
+- Network traffic analysis for threat detection
