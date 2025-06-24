@@ -14,13 +14,13 @@
 
 ---
 
-## ✅ Course 2: Play It Safe – Manage Security Risks
+##  Course 2: Play It Safe – Manage Security Risks
 - Risk management lifecycle
 - Common cyber threats (phishing, malware, insider threats)
 - Security controls (administrative, technical, physical)
 - Defense in depth & layered security approach
 
-### 📚 Additional Topics Covered:
+###  Additional Topics Covered:
 - CISSP (Certified Information Systems Security Professional)
 - RMF (Risk Management Framework)
 - NIST CSF (Cybersecurity Framework)
