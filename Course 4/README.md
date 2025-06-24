@@ -1,6 +1,6 @@
 # Google Cybersecurity Certificate - Course 4: Tools of the Trade: Linux and SQL
 
-## ✅ Modules 1 & 2 Summary
+##  Modules 1 & 2 Summary
 
 ---
 
