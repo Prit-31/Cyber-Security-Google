@@ -28,16 +28,16 @@
 
 ---
 
-## 🚧 Course 3: Connect and Protect – Networks and Network Security
+## Course 3: Connect and Protect – Networks and Network Security
 
-### 📘 Module 1: Introduction to Networks
+### Module 1: Introduction to Networks
 - Types of networks: LAN, WAN, MAN, PAN
 - Network topologies: Star, Bus, Ring, Mesh
 - Network devices: Router, Switch, Hub, Access Point, Modem
 - MAC Address vs IP Address
 - DNS and DHCP functionality
 
-### 📘 Module 2: Securing Network Traffic
+### Module 2: Securing Network Traffic
 - OSI and TCP/IP models
 - Protocols: TCP, UDP, HTTP, HTTPS, SSH, FTP
 - Common ports and services
@@ -46,7 +46,7 @@
 - Wireless security protocols: WPA2/WPA3
 - Tools introduced: Wireshark, nmap
 
-### 📘 Module 3: Network Security Controls
+### Module 3: Network Security Controls
 - Network segmentation and subnetting
 - Demilitarized Zones (DMZs)
 - Access Control Lists (ACLs)
@@ -55,7 +55,7 @@
 - Security hardening strategies
 - Physical vs logical security controls
 
-### 📘 Module 4: Monitoring and Logging
+### Module 4: Monitoring and Logging
 - Importance of network monitoring
 - Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)
 - Log sources: routers, firewalls, servers
