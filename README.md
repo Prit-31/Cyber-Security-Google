@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ Course 1: Foundations of Cybersecurity
+## Course 1: Foundations of Cybersecurity
 - Cybersecurity roles and responsibilities
 - CIA Triad (Confidentiality, Integrity, Availability)
 - Security domains and career pathways
