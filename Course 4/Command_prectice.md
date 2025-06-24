@@ -1,4 +1,4 @@
-# 🐧 Basic Linux Shell Commands
+#Basic Linux Shell Commands
 
 A beginner-friendly list of essential Linux shell commands for daily use.
 
