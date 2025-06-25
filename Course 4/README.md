@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ Module 1: Introduction to Linux
+## Module 1: Introduction to Linux
 
 > **Goal:** Understand what Linux is and why it's essential in cybersecurity.
 
@@ -14,7 +14,7 @@
 - **Terminal**: Application used to access the shell (e.g., Bash).
 - **Distributions (Distros)**: Ubuntu, Kali Linux, CentOS, etc.
 
-### 🧠 Why Cyber Pros Use Linux:
+### Why Cyber Pros Use Linux:
 - Customizability & control  
 - Better transparency and security  
 - Free and community-supported  
