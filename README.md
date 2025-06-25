@@ -46,7 +46,7 @@
 - Wireless security protocols: WPA2/WPA3
 - Tools introduced: Wireshark, nmap
 
-### Module 3: Network Security Controls
+## Module 3: Network Security Controls
 - Network segmentation and subnetting
 - Demilitarized Zones (DMZs)
 - Access Control Lists (ACLs)
