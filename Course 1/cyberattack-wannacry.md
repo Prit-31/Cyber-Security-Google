@@ -1,4 +1,4 @@
-##  Case Study: WannaCry Ransomware Attack
+## Case Study: WannaCry Ransomware Attack
 
 ###  When Did It Happen?
 In **May 2017**, a massive cyberattack called **WannaCry** hit the world.
