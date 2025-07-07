@@ -26,28 +26,6 @@ In this course, I explored essential tools and skills every entry-level cybersec
 
 ---
 
-## 📂 Repository Structure
-
-/linux-commands/
-├── basic_commands.md
-├── file_permissions.md
-├── process_management.md
-
-/sql-practice/
-├── sql_basics.md
-├── sample_queries.sql
-├── database_security.md
-
-/scripts/
-├── simple_shell_scripts.sh
-├── automate_tasks.sh
-
-yaml
-Copy
-Edit
-
----
-
 ## ⚙️ Tools Used
 
 - **Linux (Ubuntu)** — Command line practice
