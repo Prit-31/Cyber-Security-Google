@@ -22,14 +22,6 @@ This course introduces key cybersecurity concepts related to **digital assets**,
 
 ---
 
-## 📁 What’s in This Repo  
-This folder contains:  
-- 🗂️ **Notes:** Summaries and key concepts from each module  
-- 🗂️ **Diagrams:** Visuals of how assets, threats, and vulnerabilities interact  
-- 🗂️ **Practical Exercises:** Example worksheets and practice tasks  
-- 🗂️ **Resources:** Links to additional readings and tools  
-
----
 
 ## 🧩 Key Takeaway  
 Understanding the relationships between assets, threats, and vulnerabilities is critical for designing effective security controls and managing risk.
