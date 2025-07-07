@@ -1,34 +1,74 @@
 # Google Cybersecurity Certificate - Course 4: Tools of the Trade: Linux and SQL
 
-## Modules 1 & 2 Summary
+## 📌 Overview
+
+This repository contains my learning notes, scripts, and practice exercises from **Course 4: Tools of the Trade: Linux and SQL** — part of the **Google Cybersecurity Professional Certificate** on Coursera.
+
+In this course, I explored essential tools and skills every entry-level cybersecurity professional should know:
+- Using the Linux command line
+- Navigating and managing files & directories
+- Running security-related commands
+- Basics of SQL for database queries
+- Managing and securing data
 
 ---
 
-## Module 1: Introduction to Linux
+## 🗂️ Course Topics
 
-> **Goal:** Understand what Linux is and why it's essential in cybersecurity.
+✅ Introduction to the Linux operating system  
+✅ Basic Linux commands (navigating, permissions, processes)  
+✅ Using the shell to automate tasks  
+✅ Understanding file systems & directories  
+✅ Introduction to SQL  
+✅ Writing basic SQL queries (SELECT, INSERT, UPDATE, DELETE)  
+✅ Securing databases and common security best practices  
+✅ Hands-on labs and real-world scenarios
 
-### 🔹 Key Concepts:
-- **Linux OS**: Open-source, flexible, widely used in servers and cybersecurity.
-- **Shell**: Text-based interface to interact with the OS.
-- **Terminal**: Application used to access the shell (e.g., Bash).
-- **Distributions (Distros)**: Ubuntu, Kali Linux, CentOS, etc.
+---
 
-### Why Cyber Pros Use Linux:
-- Customizability & control  
-- Better transparency and security  
-- Free and community-supported  
+## 📂 Repository Structure
 
-### 🧪 Hands-on Skills:
-- Opening a terminal  
-- Navigating with `pwd`, `ls`, `cd`  
-- Viewing files with `cat`, `less`  
-- Getting help: `man` command  
+/linux-commands/
+├── basic_commands.md
+├── file_permissions.md
+├── process_management.md
 
-### ✅ Commands to Practice:
-```bash
-pwd         # Show current directory
-ls          # List directory contents
-cd /path    # Change directory
-cat file    # Display file contents
-man ls      # Manual for a command
+/sql-practice/
+├── sql_basics.md
+├── sample_queries.sql
+├── database_security.md
+
+/scripts/
+├── simple_shell_scripts.sh
+├── automate_tasks.sh
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Tools Used
+
+- **Linux (Ubuntu)** — Command line practice
+- **Bash Shell** — Writing and executing scripts
+- **MySQL** — Practicing SQL commands
+
+---
+
+## 🎯 Key Skills Learned
+
+- Confidently navigate Linux environments
+- Manage files and processes using the terminal
+- Automate basic tasks with shell scripting
+- Perform simple database operations with SQL
+- Understand how to secure data within databases
+
+---
+
+## 🚀 How to Use This Repo
+
+- 📑 Read through the notes for quick reference  
+- 🐧 Try the Linux commands in your own terminal  
+- 🗃️ Run SQL queries on a local test database  
+- ⚡ Use the shell scripts as examples for automation
