@@ -41,12 +41,4 @@ This is part of my progress towards earning the **Google Cybersecurity Professio
 
 ---
 
-## 🔗 Related  
-- [Google Cybersecurity Certificate](https://www.coursera.org/professional-certificates/google-cybersecurity)  
-- [Other Courses](#)
 
----
-
-## ✏️ Author  
-**[Your Name]**  
-Aspiring Cybersecurity Analyst 🚀
