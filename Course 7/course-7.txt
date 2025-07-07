@@ -1,0 +1,670 @@
+MODULE 1:
+
+Get to know Python
+In this reading, you will explore how programming works, how a computer processes the Python programming language, and how Python is used in cybersecurity.
+
+How programming works 
+Programming is a process that can be used to create a specific set of instructions for a computer to execute tasks. Computer programs exist everywhere. Computers, cell phones, and many other electronic devices are all given instructions by computer programs. 
+
+There are multiple programming languages used to create computer programs. Python is one of these. Programming languages are converted to binary numbers, which are a series of 0s and 1s that represent the operations that the computer's central processing unit (CPU) should perform. Each instruction corresponds to a specific operation, such as adding two numbers or loading a value from memory. 
+
+It would be very time-consuming for humans to communicate this way. Programming languages like Python make it easier to write code because you can use less syntax when instructing computers to perform complex processes.
+
+Using Python to program
+Python is a general purpose programming language that can be used to solve a variety of problems. For example, it can be used to build websites, perform data analysis, and automate tasks. 
+
+Python code must be converted through an interpreter before the computer can process it. An interpreter is a computer program that translates Python code into runnable instructions line by line. 
+
+Python versions
+There are multiple versions of Python. In this course, you are using Python 3. While using Python, it's important to keep track of the version you're using. There are differences in the syntax of each version. Syntax refers to the rules that determine what is correctly structured in a computing language.
+
+Python in cybersecurity
+In cybersecurity, Python is used especially for automation. Automation is the use of technology to reduce human and manual effort to perform common and repetitive tasks. These are some specific areas of cybersecurity in which Python might be used to automate specific tasks:
+
+Log analysis
+
+Malware analysis
+
+Access control list management
+
+Intrusion detection
+
+Compliance checks
+
+Network scanning
+
+Python environments
+You can run Python through a variety of environments. These environments include notebooks, integrated development environments (IDEs), and the command line. This reading will introduce you to these environments. It will focus primarily on notebooks because this is how you'll interact with Python in this course.
+
+Notebooks
+One way to write Python code is through a notebook. In this course, you'll interact with Python through notebooks. A notebook is an online interface for writing, storing, and running code. They also allow you to document information about the code. Notebook content either appears in a code cell or markdown cell.
+
+Code cells
+Code cells are meant for writing and running code. A notebook provides a mechanism for running these code cells. Often, this is a play button located within the cell. When you run the code, its output appears after the code. 
+
+Markdown cells
+Markdown cells are meant for describing the code. They allow you to format text in the markdown language. Markdown language is used for formatting plain text in text editors and code editors. For example, you might indicate that text should be in a certain header style. 
+
+Common notebook environments
+Two common notebook environments are 
+Jupyter Notebook
+ and 
+Google Colaboratory
+ (or Google Colab). They allow you to run several programming languages, including Python. 
+
+Integrated development environments (IDEs)
+Another option for writing Python code is through an integrated development environment (IDE), or a software application for writing code that provides editing assistance and error correction tools. Integrated development environments include a graphical user interface (GUI) that provides programmers with a variety of options to customize and build their programs. 
+
+Command line
+The command line is another environment that allows you to run Python programs. Previously, you learned that a command-line interface (CLI) is a text-based user interface that uses commands to interact with the computer. By entering commands into the command line, you can access all files and directories saved on your hard drive, including files containing Python code you want to run. You can also use the command line to open a file editor and create a new Python file.
+
+More on conditionals in Python
+Previously, you explored conditional statements and how they’re useful in automating tasks in Python. So far, you’ve focused on the if and else keywords. In this reading, you’ll review these and learn another keyword, elif. You’ll also learn how you can apply the and, or, and not operators to your conditions.
+
+How conditional statements work
+A conditional statement is a statement that evaluates code to determine whether it meets a specific set of conditions. When a condition is met, it evaluates to a Boolean value of True and performs specified actions. When the condition isn’t met, it evaluates a Boolean value of False and doesn’t perform the specified actions. 
+
+In conditional statements, the condition is often based on a comparison of two values. This table summarizes common comparison operators used to compare numerical values.
+
+operator
+
+use
+
+>
+
+greater than
+
+<
+
+less than
+
+>=
+
+greater than or equal to
+
+<=
+
+less than or equal to
+
+==
+
+equal to
+
+!=
+
+not equal to
+
+Note: The equal to (==) and not equal to (!=) operators are also commonly used to compare string data.
+
+if statements
+The keyword if starts a conditional statement. It’s a necessary component of any conditional statement. In the following example, if begins a statement that tells Python to print an "OK" message when the HTTP response status code equals 200:
+
+if status == 200:
+
+    print("OK")
+
+This code consists of a header and a body.
+
+The header of an if statement
+The first line of this code is the header. In the header of an if statement, the keyword if is followed by the condition. Here, the condition is that the status variable is equal to a value of 200. The condition can be placed in parentheses:
+
+if (status == 200):
+
+    print("OK")
+
+In cases like this one, placing parentheses around conditions in Python is optional. You might want to include them if it helps you with code readability. However, this condition will be processed the same way if written without parentheses. 
+
+In other situations, because Python evaluates the conditions in parentheses first, parentheses can affect how Python processes conditions. You will read more about one of these in the section of this reading on not.
+
+Note: You must always place a colon (:) at the end of the header. Without this syntax, the code will produce an error.
+
+The body of an if statement
+
+After the header of an if statement comes the body of the if statement. This tells Python what action or actions to perform when the condition evaluates to True. In this example, there is just one action, printing "OK" to the screen. In other cases, there might be more lines of code with additional actions.
+
+Note: For the body of the if statement to execute as intended, it must be indented further than the header. Additionally, if there are multiple lines of code within the body, they must all be indented consistently. 
+
+Continuing conditionals with else and elif
+In the previous example, if the HTTP status response code was not equal to 200, the condition would evaluate to False and Python would continue with the rest of the program. However, it’s also possible to specify alternative actions with else and elif.
+
+else statements
+The keyword else precedes a code section that only evaluates when all conditions that precede it within the conditional statement evaluate to False.
+
+In the following example, when the HTTP response status code is not equal to 200, it prints an alternative message of "check other status":
+
+if status == 200:
+
+    print("OK")
+
+else:
+
+    print("check other status")
+
+Note: Like with if, a colon (:) is required after else, and the body that follows the else header is indented.
+
+elif statements
+In some cases, you might have multiple alternative actions that depend on new conditions. In that case, you can use elif. The elif keyword precedes a condition that is only evaluated when previous conditions evaluate to False. Unlike with else, there can be multiple elif statements following if.
+
+For example, you might want to print one message if the HTTP response status code is 200, one message if it is 400, and one if it is 500. The following code demonstrates how you can use elif for this: 
+
+if status == 200:
+
+    print("OK")
+
+elif status == 400:
+
+    print("Bad Request")
+
+elif status == 500:
+
+    print("Internal Server Error") 
+
+Python will first check if the value of status is 200, and if this evaluates to False, it will go onto the first elif statement. There, it will check whether the value of status is 400. If that evaluates to True, it will print "Bad Request", but if it evaluates to False, it will go on to the next elif statement. 
+
+If you want the code to print another message when all conditions evaluate to False, then you can incorporate else after the last elif. In this example, if it reaches the else statement, it prints a message to check the status:
+
+if status == 200:
+
+    print("OK")
+
+elif status == 400:
+
+    print("Bad Request")
+
+elif status == 500:
+
+    print("Internal Server Error")
+
+else:
+
+    print("check other status")
+
+Just like with if and else, it’s important to place a colon (:) after the elif header and indent the code that follows this header.
+
+Note: Python processes multiple elif statements differently than multiple if statements. When it reaches an elif statement that evaluates to True, it won’t check the following elif statements. On the other hand, Python will run all if statements.
+
+Logical operators for multiple conditions
+In some cases, you might want Python to perform an action based on a more complex condition. You might require two conditions to evaluate to True. Or, you might require only one of two conditions to evaluate to True. Or, you might want Python to perform an action when a condition evaluates to False. The operators and, or, and not can be used in these cases.
+
+and
+The and operator requires both conditions on either side of the operator to evaluate to True. For example, all HTTP status response codes between 200 and 226 relate to successful responses. You can use and to join a condition of being greater than or equal to 200 with another condition of being less than or equal to 226:
+
+if status >= 200 and status <= 226:
+
+    print("successful response")
+
+When both conditions are True, then the "successful response" message will print.
+
+or
+The or operator requires only one of the conditions on either side of the operator to evaluate to True. For example, both a status code of 100 and a status code of 102 are informational responses. Using or, you could ask Python to print an "informational response" message when the code is either 100 or 102:
+
+if status == 100 or status == 102:
+
+    print("informational response")
+
+Only one of these conditions needs to be met for Python to print the message.
+
+not
+The not operator negates a given condition so that it evaluates to False if the condition is True and to True if it is False. For example, if you want to indicate that Python should check the status code when it’s something outside of the successful range, you can use not:
+
+if not(status >= 200 and status <= 226):
+
+    print("check status")
+
+Python first checks whether the value of status is greater than or equal to 200 and less than or equal to 226, and then because of the operator not, it inverts this. This means it will print the message if status is less than 200 or greater than 226.
+
+Note: In this case, the parentheses are necessary for the code to apply not to both conditions. Python will evaluate the conditions within the parentheses first. This means it will first evaluate the conditions on either side of the and operator and then apply not to both of them.
+
+Glossary terms from module 1
+Terms and definitions from Course 7, Module 1
+Automation: The use of technology to reduce human and manual effort to perform common and repetitive tasks
+
+Boolean data: Data that can only be one of two values: either True or False
+
+Command-line interface: A text-based user interface that uses commands to interact with the computer
+
+Comment: A note programmers make about the intention behind their code
+
+Conditional statement: A statement that evaluates code to determine if it meets a specified set of conditions
+
+Data type: A category for a particular type of data item
+
+Dictionary data: Data that consists of one or more key-value pairs
+
+Float data: Data consisting of a number with a decimal point
+
+Integer data: Data consisting of a number that does not include a decimal point
+
+Integrated development environment (IDE): A software application for writing code that provides editing assistance and error correction tools
+
+Interpreter: A computer program that translates Python code into runnable instructions line by line 
+
+Iterative statement: Code that repeatedly executes a set of instructions
+
+List data: Data structure that consists of a collection of data in sequential form
+
+Loop variable: A variable that is used to control the iterations of a loop
+
+Notebook: An online interface for writing, storing, and running code 
+
+Programming: A process that can be used to create a specific set of instructions for a computer to execute tasks
+
+Set data: Data that consists of an unordered collection of unique values
+
+String data: Data consisting of an ordered sequence of characters
+
+Syntax: The rules that determine what is correctly structured in a computing language
+
+Tuple data: Data structure that consists of a collection of data that cannot be changed 
+
+Type error: An error that results from using the wrong data type
+
+Variable: A container that stores data
+
+Import modules and libraries in Python
+Previously, you explored libraries and modules. You learned that a module is a Python file that contains additional functions, variables, classes, and any kind of runnable code. You also learned that a library is a collection of modules that provide code users can access in their programs. You were introduced to a few modules in the Python Standard Library and a couple of external libraries. In this reading, you'll learn how to import a module that exists in the Python Standard Library and use its functions. You'll also expand your understanding of external libraries. 
+
+The Python Standard Library
+The Python Standard Library is an extensive collection of Python code that often comes packaged with Python. It includes a variety of modules, each with pre-built code centered around a particular type of task. 
+
+For example, you were previously introduced to the following modules in the Python Standard Library:
+
+The re module, which provides functions used for searching for patterns in log files
+
+The csv module, which provides functions used when working with .csv files
+
+The glob and os modules, which provide functions used when interacting with the command line
+
+The time and datetime modules, which provide functions used when working with timestamps
+
+Another Python Standard Library module is statistics. The statistics module includes functions used when calculating statistics related to numeric data. For example, mean() is a function in the statistics module that takes numeric data as input and calculates its mean (or average). Additionally, median() is a function in the statistics module that takes numeric data as input and calculates its median (or middle value).
+
+How to import modules from the Python Standard Library
+To access modules from the Python Standard Library, you need to import them. You can choose to either import a full module or to only import specific functions from a module. 
+
+Importing an entire module
+To import an entire Python Standard Library module, you use the import keyword. The import keyword searches for a module or library in a system and adds it to the local Python environment. After import, specify the name of the module to import. For example, you can specify import statistics to import the statistics module. This will import all the functions inside of the statistics module for use later in your code.
+
+As an example, you might want to use the mean() function from the statistics module to calculate the average number of failed login attempts per month for a particular user. In the following code block, the total number of failed login attempts for each of the twelve months is stored in a list called monthly_failed_attempts. Run this code and analyze how mean() can be used to calculate the average of these monthly failed login totals and store it in mean_failed_attempts:
+
+1234
+import statistics
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = statistics.mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts)
+Reset
+The output returns a mean of 35.25. You might notice the outlying value of 178 and want to find the middle value as well. To do this through the median() function, you can use the following code:
+
+1234
+import statistics
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+median_failed_attempts = statistics.median(monthly_failed_attempts)
+print("median:", median_failed_attempts)
+Reset
+This gives you the value of 20.5, which might also be useful for analyzing the user's failed login attempt statistics.
+
+Note: When importing an entire Python Standard Library module, you need to identify the name of the module with the function when you call it. You can do this by placing the module name followed by a period (.) before the function name. For example, the previous code blocks use statistics.mean() and statistics.median() to call those functions. 
+
+Importing specific functions from a module
+To import a specific function from the Python Standard Library, you can use the from keyword. For example, if you want to import just the median() function from the statistics module, you can write from statistics import median.
+
+To import multiple functions from a module, you can separate the functions you want to import with a comma. For instance, from statistics import mean, median imports both the mean() and the median() functions from the statistics module.
+
+An important detail to note is that if you import specific functions from a module, you no longer have to specify the name of the module before those functions. You can examine this in the following code, which specifically imports only the median() and the mean() functions from the statistics module and performs the same calculations as the previous examples:
+
+123456
+from statistics import mean, median
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts)
+median_failed_attempts = median(monthly_failed_attempts)
+print("median:", median_failed_attempts)
+Reset
+It is no longer necessary to specify statistics.mean() or statistics.median() and instead the code incorporates these functions as mean() and median().
+
+External libraries
+In addition to the Python Standard Library, you can also download external libraries and incorporate them into your Python code. For example, previously you were introduced to Beautiful Soup (bs4) for parsing HTML files and NumPy (numpy) for arrays and mathematical computations. Before using them in a Jupyter Notebook or a Google Colab environment, you need to install them first.
+
+To install a library, such as numpy, in either environment, you can run the following line prior to importing the library:
+
+%pip install numpy
+
+This installs the library so you can use it in your notebook.
+
+After a library is installed, you can import it directly into Python using the import keyword in a similar way to how you used it to import modules from the Python Standard Library. For example, after the numpy install, you can use this code to import it:
+
+import numpy
+
+Ensure proper syntax and readability in Python
+Previously, you were introduced to the PEP 8 style guide and its stylistic guidelines for programmers working in Python. You also learned about how adding comments and using correct indentation makes your code more readable. Additionally, correct indentation ensures your code is executed properly. This reading explores these ideas further and also focuses on common items to check in the syntax of your code to ensure it runs. 
+
+Comments
+A comment is a note programmers make about the intentions behind their code. Comments make it easier for you and other programmers to read and understand your code. 
+
+It’s important to start your code with a comment that explains what the program does. Then, throughout the code, you should add additional comments about your intentions behind specific sections.
+
+When adding comments, you can add both single-line comments and multi-line comments.
+
+Single-line comments
+Single-line comments in Python begin with the (#) symbol. According to the PEP 8 style guide, it’s best practice to keep all lines in Python under 79 characters to maintain readability, and this includes comments.
+
+Single-line comments are often used throughout your program to explain the intention behind specific sections of code. For example, this might be when you're explaining simpler components of your program, such as the following for loop:
+
+# Print elements of 'computer_assets' list
+
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+
+for asset in computer_assets:
+
+    print(asset)
+
+Note: Comments are important when writing more complex code, like functions, or multiple loops or conditional statements. However, they're optional when writing less complex code like reassigning a variable.
+
+Multi-line comments
+Multi-line comments are used when you need more than 79 characters in a single comment. For example, this might occur when defining a function if the comment describes its inputs and their data types as well as its output. 
+
+There are two commonly used ways of writing multi-line comments in Python. The first is by using the hashtag (#) symbol over multiple lines:
+
+# remaining_login_attempts() function takes two integer parameters,
+
+# the maximum login attempts allowed and the total attempts made,
+
+# and it returns an integer representing remaining login attempts
+
+def remaining_login_attempts(maximum_attempts, total_attempts):
+
+    return maximum_attempts - total_attempts
+
+Another way of writing multi-line comments is by using documentation strings and not assigning them to a variable. Documentation strings, also called docstrings, are strings that are written over multiple lines and are used to document code. To create a documentation string, use triple quotation marks (""" """). 
+
+You could add the comment to the function in the previous example in this way too:
+
+"""
+
+remaining_login_attempts() function takes two integer parameters,
+
+the maximum login attempts allowed and the total attempts made,
+
+and it returns an integer representing remaining login attempts
+
+"""
+
+Correct indentation
+Indentation is space added at the beginning of a line of code. In Python, you should indent the body of conditional statements, iterative statements, and function definitions. Indentation is not only necessary for Python to interpret this syntax properly, but it can also make it easier for you and other programmers to read your code.
+
+The PEP 8 style guide recommends that indentations should be four spaces long. For example, if you had a conditional statement inside of a while loop, the body of the loop would be indented four spaces and the body of the conditional would be indented four spaces beyond that. This means the conditional would be indented eight spaces in total. 
+
+count = 0
+
+login_status = True
+
+while login_status == True:
+
+    print("Try again.")
+
+    count = count + 1
+
+    if count == 4:
+
+        login_status = False
+
+Maintaining correct syntax
+Syntax errors involve invalid usage of the Python language. They are incredibly common with Python, so focusing on correct syntax is essential in ensuring that your code runs. Awareness of common errors will help you more easily fix them. 
+
+Syntax errors often occur because of mistakes with data types or in the headers of conditional or iterative statements or of function definitions.
+
+Data types
+Correct syntax varies depending on data type:
+
+Place string data in quotation marks.
+
+Example: username = "bmoreno"
+
+Do not add quotation marks around integer, float, or Boolean data types.
+
+Examples: login_attempts = 5, percentage_successful = .8, login_status = True
+
+Place lists in brackets and separate the elements of a list with commas.
+
+Example: username_list = ["bmoreno", "tshah"]
+
+Colons in headers
+The header of a conditional or iterative statement or of a function definition must end with a colon. For example, a colon appears at the end of the header in the following function definition:
+
+def remaining_login_attempts(maximum_attempts, total_attempts):
+
+    return maximum_attempts - total_attempts
+
+Glossary terms from module 2
+Terms and definitions from Course 7, Module 2
+Argument (Python): The data brought into a function when it is called
+
+Built-in function: A function that exists within Python and can be called directly
+
+Comment: A note programmers make about the intention behind their code
+
+Function: A section of code that can be reused in a program
+
+Global variable: A variable that is available through the entire program
+
+Indentation: Space added at the beginning of a line of code
+
+Library: A collection of modules that provide code users can access in their programs
+
+Local variable: A variable assigned within a function
+
+Module: A Python file that contains additional functions, variables, classes, and any kind of runnable code
+
+Parameter (Python): An object that is included in a function definition for use in that function
+
+PEP 8 style guide: A resource that provides stylistic guidelines for programmers working in Python 
+
+Python Standard Library: An extensive collection of Python code that often comes packaged with Python
+
+Return statement: A Python statement that executes inside a function and sends information back to the function call 
+
+Style guide: A manual that informs the writing, formatting, and design of documents
+
+User-defined function: A function that programmers design for their specific needs
+
+MODULE 4:
+
+Automating Tasks in CI/CD
+Automating Tasks in CI/CD: Using Python to Build Security Directly Into Your Pipeline
+You’ve learned learned how important automation is for security and you’ve also seen how Python can automate security tasks. Now, let’s explore how to use automation, and especially Python, to make your Continuous Integration and Continuous Delivery/Deployment (CI/CD) pipelines more secure.
+
+Just like security analysts use Python to automate security tasks for whole systems, you can use Python to automate security tasks right inside your CI/CD pipeline. This means you build security checks directly into how you build and release software. This is called DevSecOps. Think of it as 'Development, Security, and Operations' working together from the beginning. DevSecOps is about making security a shared responsibility and automating security practices as part of your everyday workflow, ensuring that security is considered at every stage of your CI/CD pipeline.
+
+ Why Automate Security Tasks in CI/CD with Python?
+
+Imagine manually checking every piece of code for problems, or manually testing every version of software for security issues before it’s released. That would be really slow and have a lot of errors. Python is a great tool to automate these security tasks in CI/CD because it’s flexible and has many helpful tools - like libraries.
+
+Using Python to  automate security tasks in your CI/CD pipeline is beneficial for a few reasons: :
+
+Increases Speed and Efficiency: Python scripts for security checks are fast and work well as part of your pipeline. This keeps your software releases quick and secure at the same time.
+
+Finds Problems Early: Python can help find security problems early on when software is being developed. This makes problems easier and less expensive to fix. 
+
+Remains Consistent: Python scripts make sure security checks are done the same way every time you build and release software. This lowers the chance of human error.
+
+Reduces workload  for Security Teams: Python frees up security teams from repetitive tasks and allows them to work on  larger security problems, planning, or creating better Python scripts for security automation.
+
+Supports a culture or security: Python-based automation helps put security into the CI/CD process. This helps create a DevSecOps culture where everyone thinks about security, not just the security team.
+
+What Security Tasks Can You Automate in CI/CD with Python?
+You can use Python to automate many kinds of security tasks in CI/CD pipelines. Here are some main tasks:
+
+Security Testing 
+Static Application Security Testing (SAST): Python scripts can be written to start SAST tools that look at your code for weaknesses before it gets built. Python can also be used to understand the SAST results, create reports, and automatically stop the process if serious security problems are found.
+
+Dynamic Application Security Testing (DAST): Python can be used to automatically run DAST tools to test software while it’s running in a test area. Then, Python scripts can look at the DAST results and give feedback in the CI/CD pipeline.
+
+Software Composition Analysis (SCA): Python can work with SCA tools to check your software’s dependencies for weaknesses. Dependencies are things like open source code and components from other companies. Scripts can control the SCA process, report problems, and set rules based on the severity of weaknesses.
+
+Automated Vulnerability Scanning 
+Python scripts can organize vulnerability scans of things like container images, infrastructure settings, and the CI/CD pipeline itself. You can use Python to schedule these scans, collect the results, and send alerts when new vulnerabilities are discovered.
+
+Compliance Checks 
+Python scripts can automatically check for compliance. For example, scripts can check if code follows secure coding rules or if infrastructure settings meet security guidelines. You can then use Python to make reports about compliance and ensure security standards are followed.
+
+Secrets Management Automation 
+Python is key for automating secure secrets management. Scripts can be used to review through code and stop private credentials from being directly written in the code. Also, Python scripts can work with secret management tools (like HashiCorp Vault) to safely get and put secrets into applications during automated releases.
+
+Policy Enforcement 
+"Policy as Code" and Python scripts work together to automatically enforce security policies. Python can be used to define and understand security policies. Then, scripts can check pipeline steps against these policies. If policies are broken (for example, if too many vulnerabilities are found), Python can automatically stop releases.
+
+How Python Works with CI/CD Tools
+Python is even more helpful for CI/CD security automation because it works well with popular CI/CD tools. Tools like Jenkins, GitLab CI, and CircleCI let you easily run Python scripts as part of your release process.
+
+Here’s how Python fits in:
+
+Run Scripts: CI/CD systems let you set up release steps that run commands or scripts. You can easily set up steps to run Python scripts that do security tasks.
+
+API Connections: Many CI/CD tools and security tools have APIs (Application Programming Interfaces). Python is excellent at using APIs. You can write Python scripts to use CI/CD system APIs to manage the release process, start jobs, get software build files, and connect to security tool APIs to start scans and get results.
+
+Add-ons and Extensions: Some CI/CD systems have add-ons or extensions made in Python or that can easily use Python scripts. This makes it even simpler to add security automation based on Python.
+
+Using Python to Set Up Environments, Check Code Quality, and Secure Releases
+Besides security testing, Python scripts can automate other important CI/CD tasks while adding security best practices:
+
+Set Up Environments: Python can automate staging areas. Scripts can make sure these areas are set up securely, with good network settings and security controls.
+
+Code Quality Checks: Python can be used to run code quality tools (linters). Scripts can check code for style problems and possible security errors. This helps make sure code quality standards are followed early in development.
+
+Automate Secure Releases: Python scripts are very useful for automating releases to staging and production areas securely. Python can manage release processes and ensure releases follow security best practices. This includes using secure settings and moving software files securely.
+
+Conclusion: Python - Your Automation Ally for Secure CI/CD
+Using Python to automate security tasks is key to making your CI/CD pipeline secure and fast. By using Python’s abilities and connecting it to your CI/CD tools, you can find and fix security problems early, do less manual work, enforce security rules, and make your software more secure overall.
+
+By making Python automation a main part of your CI/CD security plan, you’ll be ready to create and release secure software, quickly and with confidence. Now you know how Python helps automate security in CI/CD. Next, you’ll learn about the specific parts of Python that make this possible. You’ll learn about variables, conditional statements, iterative statements, functions, and working with files. These are the basic pieces for creating your own powerful Python scripts to automate security in CI/CD.
+
+Essential Python components for automation
+Throughout this course, you explored coding in Python. You've focused on variables, conditional statements, iterative statements, functions, and a variety of ways to work with strings and lists. In this reading, you will explore why these are all essential components when automating tasks through Python, and you'll be introduced to another necessary component: working with files. 
+
+Automating tasks in Python
+Automation is the use of technology to reduce human and manual effort to perform common and repetitive tasks. As a security analyst, you will primarily use Python to automate tasks.
+
+You have encountered multiple examples of how to use Python for automation in this course, including investigating logins, managing access, and updating devices.
+
+Automating cybersecurity-related tasks requires understanding the following Python components that you've worked with in this course:
+
+Variables
+A variable is a container that stores data. Variables are essential for automation. Without them, you would have to individually rewrite values for each action you took in Python.
+
+Conditional statements
+A conditional statement is a statement that evaluates code to determine if it meets a specified set of conditions. Conditional statements allow you to check for conditions before performing actions. This is much more efficient than manually evaluating whether to apply an action to each separate piece of data.
+
+Iterative statements
+An iterative statement is code that repeatedly executes a set of instructions. You explored two kinds of iterative statements: for loops and while loops. In both cases, they allow you to perform the same actions a certain number of times without the need to retype the same code each time. Using a for loop allows you to automate repetition of that code based on a sequence, and using a while loop allows you to automate the repetition based on a condition.
+
+Functions
+A function is a section of code that can be reused in a program. Functions help you automate your tasks by reducing the need to incorporate the same code multiple places in a program. Instead, you can define the function once and call it wherever you need it. 
+
+You can develop your own functions based on your particular needs. You can also incorporate the built-in functions that exist directly in Python without needing to manually code them.
+
+Techniques for working with strings
+String data is one of the most common data types that you'll encounter when automating cybersecurity tasks through Python, and there are a lot of techniques that make working with strings efficient. You can use bracket notation to access characters in a string through their indices. You can also use a variety of functions and methods when working with strings, including str(), len(), and .index().
+
+Techniques for working with lists
+List data is another common data type. Like with strings, you can use bracket notation to access a list element through its index. Several methods also help you with automation when working with lists. These include .insert(), .remove(), .append(), and .index().
+
+Example: Counting logins made by a flagged user
+As one example, you may find that you need to investigate the logins of a specific user who has been flagged for unusual activity. Specifically, you are responsible for counting how many times this user has logged in for the day. If you are given a list identifying the username associated with each login attempt made that day, you can automate this investigation in Python.
+
+To automate the investigation, you'll need to incorporate the following Python components:
+
+A for loop will allow you to iterate through all the usernames in the list. 
+
+Within the for loop, you should incorporate a conditional statement to examine whether each username in the list matches the username of the flagged user.
+
+When the condition evaluates to True, you also need to increment a counter variable that keeps track of the number of times the flagged user appears in the list.
+
+Additionally, if you want to reuse this code multiple times, you can incorporate it into a function. The function can include parameters that accept the username of the flagged user and the list to iterate through. (The list would contain the usernames associated with all login attempts made that day.) The function can use the counter variable to return the number of logins for that flagged user.
+
+Working with files in Python
+One additional component of automating cybersecurity-related tasks in Python is understanding how to work with files. Security-related data will often be initially found in log files. A log is a record of events that occur within an organization's systems. In logs, lines are often appended to the record as time progresses.
+
+Two common file formats for security logs are .txt files and .csv files. Both .txt and .csv files are types of text files, meaning they contain only plain text. They do not contain images and do not specify graphical properties of the text, including font, color, or spacing. In a .csv file, or a "comma-separated values" file, the values are separated by commas. In a .txt file, there is not a specific format for separating values, and they may be separated in a variety of ways, including spaces.
+
+You can easily extract data from .txt and .csv files. You can also convert both into other file formats.
+
+Coming up, you'll learn how to import, read from, and write to files. You will also explore how to structure the information contained in files.
+
+Import files into Python
+Previously, you explored how to open files in Python, convert them into strings, and read them. In this reading, you'll review the syntax needed for this. You'll also focus on why the ability to work with files is important for security analysts using Python, and you will learn about writing files.
+
+Working with files in cybersecurity 
+Security analysts may need to access a variety of files when working in Python. Many of these files will be logs. A log is a record of events that occur within an organization's systems.
+
+For instance, there may be a log containing information on login attempts. This might be used to identify unusual activity that signals attempts made by a malicious actor to access the system.
+
+As another example, malicious actors that have breached the system might be capable of attacking software applications. An analyst might need to access a log that contains information on software applications that are experiencing issues.
+
+Opening files in Python
+To open a file called "update_log.txt" in Python for purposes of reading it, you can incorporate the following line of code:
+
+with open("update_log.txt", "r") as file:
+
+This line consists of the with keyword, the open() function with its two parameters, and the as keyword followed by a variable name. You must place a colon (:) at the end of the line.
+
+with
+The keyword with handles errors and manages external resources when used with other functions. In this case, it's used with the open() function in order to open a file. It will then manage the resources by closing the file after exiting the with statement.
+
+Note: You can also use the open() function without the with keyword. However, you should close the file you opened to ensure proper handling of the file. 
+
+open()
+The open() function opens a file in Python.
+
+The first parameter identifies the file you want to open. In the following file structure, "update_log.txt" is located in the same directory as the Python file that will access it, "log_parser.ipynb":
+
+In this file structure, update_log.txt is in the same directory as the log_parser.ipynb file, but access_log.txt is not.
+Because they're in the same directory, only the name of the file is required. The code can be written as with open("update_log.txt", "r") as file:.
+
+However, "access_log.txt" is not in the same directory as the Python file "log_parser.ipynb". Therefore, it's necessary to specify its absolute file path. A file path is the location of a file or directory. An absolute file path starts from the highest-level directory, the root. In the following code, the first parameter of the open() function includes the absolute file path to "access_log.txt":
+
+with open("/home/analyst/logs/access_log.txt", "r") as file:
+
+Note: In Python, the names of files or their file paths can be handled as string data, and like all string data, you must place them in quotation marks.
+
+The second parameter of the open() function indicates what you want to do with the file. In both of these examples, the second parameter is "r", which indicates that you want to read the file. Alternatively, you can use "w" if you want to write to a file or "a" if you want to append to a file.
+
+as
+When you open a file using with open(), you must provide a variable that can store the file while you are within the with statement. You can do this through the keyword as followed by this variable name. The keyword as assigns a variable that references another object. The code with open("update_log.txt", "r") as file: assigns file to reference the output of the open() function within the indented code block that follows it.
+
+Reading files in Python
+After you use the code with open("update_log.txt", "r") as file: to import "update_log.txt" into the file variable, you should indicate what to do with the file on the indented lines that follow it. For example, this code uses the .read() method to read the contents of the file:
+
+with open("update_log.txt", "r") as file:
+
+    updates = file.read()
+
+print(updates)
+
+The .read() method converts files into strings. This is necessary in order to use and display the contents of the file that was read.
+
+In this example, the file variable is used to generate a string of the file contents through .read(). This string is then stored in another variable called updates. After this, print(updates) displays the string.
+
+Once the file is read into the updates string, you can perform the same operations on it that you might perform with any other string. For example, you could use the .index() method to return the index where a certain character or substring appears. Or, you could use len() to return the length of this string.
+
+Writing files in Python
+Security analysts may also need to write to files. This could happen for a variety of reasons. For example, they might need to create a file containing the approved usernames on a new allow list. Or, they might need to edit existing files to add data or to adhere to policies for standardization.
+
+To write to a file, you will need to open the file with "w" or "a" as the second argument of open(). 
+
+You should use the "w" argument when you want to replace the contents of an existing file. When working with the existing file update_log.txt, the code with open("update_log.txt", "w") as file: opens it so that its contents can be replaced. 
+
+Additionally, you can use the "w" argument to create a new file. For example, with open("update_log2.txt", "w") as file: creates and opens a new file called "update_log2.txt". 
+
+You should use the "a" argument if you want to append new information to the end of an existing file rather than writing over it. The code with open("update_log.txt", "a") as file: opens "update_log.txt" so that new information can be appended to the end. Its existing information will not be deleted.
+
+Like when opening a file to read from it, you should indicate what to do with the file on the indented lines that follow when you open a file to write to it. With both "w" and "a", you can use the .write() method. The .write() method writes string data to a specified file. 
+
+The following example uses the .write() method to append the content of the line variable to the file "access_log.txt".
+
+line = "jrafael,192.168.243.140,4:56:27,True"
+
+with open("access_log.txt", "a") as file:
+
+    file.write(line)
+
+Note: Calling the .write() method without using the with keyword when importing the file might result in its arguments not being completely written to the file if the file is not properly closed in another way.
